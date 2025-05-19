@@ -2,43 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment Solution for Module 2</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Module 3 Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1 class="text-center">Our Menu</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed visible-xs"
+            data-toggle="collapse"
+            data-target="#collapsingNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Food, LLC</a>
+        </div>
 
-    <div class="row">
-      <section class="col col-lg-4 col-md-6">
-        <div class="section-title chicken">Chicken</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </section>
+        <!-- Mobile dropdown menu -->
+        <div class="collapse navbar-collapse" id="collapsingNavbar">
+          <ul class="nav navbar-nav visible-xs">
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Beef</a></li>
+            <li><a href="#">Sushi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <section class="col col-lg-4 col-md-6">
-        <div class="section-title beef">Beef</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </section>
-
-      <section class="col col-lg-4 col-md-12">
-        <div class="section-title sushi">Sushi</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </section>
+    <!-- Page Heading -->
+    <div class="container">
+      <h1 class="text-center">Our Menu</h1>
     </div>
+
+    <!-- Tall Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 menu-section">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            pharetra augue at tincidunt lacinia. Quisque finibus lacinia diam a
+            dignissim. Morbi vel fringilla purus. Suspendisse potenti. Sed
+            vestibulum, ipsum et convallis tincidunt, nulla neque tristique
+            risus, in finibus nulla risus at augue.
+            <br /><br />
+            (Repeat this or add `height: 1000px` in CSS.)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS (required for collapse menu) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
